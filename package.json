@@ -10,6 +10,7 @@
     "fusion-react": "^4.0.3",
     "fusion-tokens": "^2.1.2",
     "isomorphic-fetch": "^2.2.1",
+    "koa-bodyparser": "^4.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

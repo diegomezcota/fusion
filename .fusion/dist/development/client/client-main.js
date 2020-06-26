@@ -30,6 +30,15 @@ const Root = () => {
     if (e.key === 'Enter') {
       setInputText('');
       setTodos([...todos, inputText]);
+      isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2___default()('/api/todos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          value: inputText
+        })
+      });
     }
   };
 
@@ -41,28 +50,28 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 37,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_1__["Helmet"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 38,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 39,
       columnNumber: 7
     }
   }, "\n        body {\n          background-color: #f5f5f5;\n          font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;\n        }\n        h1 {\n          color: rgba(175, 47, 47, 0.15);\n          font-size: 100px;\n          font-weight: 100;\n          text-align: center;\n        }\n        .container {\n          background: #ffffff;\n          border: 1px solid #ededed;\n          margin: 0 auto;\n          width: 550px;\n        }\n        input {\n          border: none;\n          font-size: 24px;\n          font-weight: 300;\n          padding: 15px;\n          width: 520px;\n        }\n        input::placeholder {\n          color: #e6e6e6;\n          font-style: italic;\n          font-weight: 100;\n        }\n        .todo {\n          border-top: 1px solid #ededed;\n          padding: 15px;\n        }\n        .todo-text {\n          font-weight: 300;\n        }\n      ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 79,
       columnNumber: 7
     }
   }, "todos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -70,7 +79,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 80,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -82,7 +91,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 81,
       columnNumber: 9
     }
   }), todos.map(todo => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -90,7 +99,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 89,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -98,7 +107,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 90,
       columnNumber: 13
     }
   }, todo)))));
@@ -108,7 +117,7 @@ const Root = () => {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 91,
+    lineNumber: 98,
     columnNumber: 16
   }
 }));
@@ -127,16 +136,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return start; });
 /* harmony import */ var fusion_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fusion-react */ "./node_modules/fusion-react/dist-browser-esm/index.js");
 /* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/root */ "./src/components/root.js");
-/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! fusion-plugin-react-helmet-async */ "./node_modules/fusion-plugin-react-helmet-async/dist-browser-esm/index.js");
+/* harmony import */ var _plugins_todos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plugins/todos */ "./src/plugins/todos.js");
+/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! fusion-plugin-react-helmet-async */ "./node_modules/fusion-plugin-react-helmet-async/dist-browser-esm/index.js");
+
 
  // styling
 
 
 async function start() {
   const app = new fusion_react__WEBPACK_IMPORTED_MODULE_0__["default"](_components_root__WEBPACK_IMPORTED_MODULE_1__["default"]);
-  app.register(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+  if (false) {}
+
+  app.register(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__["default"]);
   return app;
 }
+
+/***/ }),
+
+/***/ "./src/plugins/todos.js":
+/*!******************************!*\
+  !*** ./src/plugins/todos.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const todos = ['Buy milk', 'Walk dog'];
+/* harmony default export */ __webpack_exports__["default"] = (async (ctx, next) => {
+  if (ctx.path === '/api/todos') {
+    if (ctx.method === 'GET') {
+      ctx.response.body = todos;
+    } else if (ctx.method === 'POST') {
+      const {
+        value
+      } = ctx.request.body;
+      todos.push(value);
+      ctx.response.status = 201;
+    }
+  }
+
+  await next();
+});
 
 /***/ }),
 

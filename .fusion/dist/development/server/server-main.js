@@ -35,7 +35,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "6b03e044b81a8b866b9b";
+/******/ 	var hotCurrentHash = "5d74606a2dd928c5eb71";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1793,6 +1793,15 @@ const Root = () => {
     if (e.key === 'Enter') {
       setInputText('');
       setTodos([...todos, inputText]);
+      isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2___default()('/api/todos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          value: inputText
+        })
+      });
     }
   };
 
@@ -1804,21 +1813,21 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 37,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_1__["Helmet"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 38,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 39,
       columnNumber: 7
     }
   }, `
@@ -1861,7 +1870,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 79,
       columnNumber: 7
     }
   }, "todos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1869,7 +1878,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 80,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -1881,7 +1890,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 81,
       columnNumber: 9
     }
   }), todos.map(todo => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1889,7 +1898,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 89,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1897,7 +1906,7 @@ const Root = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 90,
       columnNumber: 13
     }
   }, todo)))));
@@ -1907,7 +1916,7 @@ const Root = () => {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 91,
+    lineNumber: 98,
     columnNumber: 16
   }
 }));
@@ -1927,17 +1936,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var fusion_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fusion-react */ "fusion-react");
 /* harmony import */ var fusion_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fusion_react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/root */ "./src/components/root.js");
-/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! fusion-plugin-react-helmet-async */ "fusion-plugin-react-helmet-async");
-/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _plugins_todos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plugins/todos */ "./src/plugins/todos.js");
+/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! fusion-plugin-react-helmet-async */ "fusion-plugin-react-helmet-async");
+/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__);
+
 
  // styling
 
 
 async function start() {
   const app = new fusion_react__WEBPACK_IMPORTED_MODULE_0___default.a(_components_root__WEBPACK_IMPORTED_MODULE_1__["default"]);
-  app.register(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_2___default.a);
+
+  if (true) {
+    app.middleware(__webpack_require__(/*! koa-bodyparser */ "koa-bodyparser")());
+    app.middleware(_plugins_todos__WEBPACK_IMPORTED_MODULE_2__["default"]);
+  }
+
+  app.register(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3___default.a);
   return app;
 }
+
+/***/ }),
+
+/***/ "./src/plugins/todos.js":
+/*!******************************!*\
+  !*** ./src/plugins/todos.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const todos = ['Buy milk', 'Walk dog'];
+/* harmony default export */ __webpack_exports__["default"] = (async (ctx, next) => {
+  if (ctx.path === '/api/todos') {
+    if (ctx.method === 'GET') {
+      ctx.response.body = todos;
+    } else if (ctx.method === 'POST') {
+      const {
+        value
+      } = ctx.request.body;
+      todos.push(value);
+      ctx.response.status = 201;
+    }
+  }
+
+  await next();
+});
 
 /***/ }),
 
@@ -2018,6 +2063,17 @@ module.exports = require("http");
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\isomorphic-fetch\\fetch-npm-node.js");
+
+/***/ }),
+
+/***/ "koa-bodyparser":
+/*!****************************************************************************************************************************!*\
+  !*** external "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\koa-bodyparser\\index.js" ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\koa-bodyparser\\index.js");
 
 /***/ }),
 
