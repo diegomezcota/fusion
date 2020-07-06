@@ -1,5 +1,132 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
+/***/ "./src/components/App.js":
+/*!*******************************!*\
+  !*** ./src/components/App.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _todosData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./todosData */ "./src/components/todosData.js");
+/* harmony import */ var _TodoItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TodoItem */ "./src/components/TodoItem.js");
+var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js";
+
+
+
+
+class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor() {
+    super();
+    this.state = {
+      todos: _todosData__WEBPACK_IMPORTED_MODULE_1__["default"]
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(id) {
+    this.setState(prevState => {
+      const updatedTodos = prevState.todos.map(todo => {
+        if (todo.id === id) {
+          todo.completed = !todo.completed;
+        }
+
+        return todo;
+      });
+      return {
+        todos: updatedTodos
+      };
+    });
+  }
+
+  render() {
+    const todoItems = this.state.todos.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TodoItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: item.id,
+      item: item,
+      handleChange: this.handleChange,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 56
+      }
+    }));
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "todo-list",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 13
+      }
+    }, todoItems);
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/components/TodoItem.js":
+/*!************************************!*\
+  !*** ./src/components/TodoItem.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js";
+
+const completedStyle = {
+  fontStyle: "italic",
+  color: "#cdcdcd",
+  textDecoration: "line-through"
+};
+
+class TodoItem extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "todo-item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "checkbox",
+      checked: this.props.item.completed,
+      onChange: () => this.props.handleChange(this.props.item.id),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      style: this.props.item.completed ? completedStyle : null,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 17
+      }
+    }, this.props.item.text));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (TodoItem);
+
+/***/ }),
+
 /***/ "./src/components/root.js":
 /*!********************************!*\
   !*** ./src/components/root.js ***!
@@ -11,116 +138,163 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fusion-plugin-react-helmet-async */ "./node_modules/react-helmet-async/lib/index.module.js");
-/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-fetch */ "./node_modules/isomorphic-fetch/fetch-npm-browserify.js");
-/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.js */ "./src/components/App.js");
 var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js";
-
+// import React, {useState, useEffect} from 'react';
+// import {Helmet} from 'fusion-plugin-react-helmet-async';
+// import fetch from 'isomorphic-fetch';
+// const Root = () => {
+//   const [todos, setTodos] = useState([]);
+//   const [inputText, setInputText] = useState('');
+//   useEffect(() => {
+//     fetch('/api/todos')
+//       .then(async res => await res.json())
+//       .then(res => setTodos(res));
+//   }, []);
+//   const handleOnKeydown = (e) => {
+//     if (e.key === 'Enter') {
+//       setInputText('');
+//       setTodos([
+//         ...todos,
+//         inputText
+//       ]);
+//       fetch('/api/todos', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({value: inputText}),
+//       });
+//     }
+//   };
+//   const handleOnChange = (e) => {
+//     setInputText(e.currentTarget.value);
+//   };
+//   return (
+//     <React.Fragment>
+//         <Helmet>
+//       <style>
+//       {`
+//         body {
+//           background-color: #f5f5f5;
+//           font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//         }
+//         h1 {
+//           color: rgba(175, 47, 47, 0.15);
+//           font-size: 100px;
+//           font-weight: 100;
+//           text-align: center;
+//         }
+//         .container {
+//           background: #ffffff;
+//           border: 1px solid #ededed;
+//           margin: 0 auto;
+//           width: 550px;
+//         }
+//         input {
+//           border: none;
+//           font-size: 24px;
+//           font-weight: 300;
+//           padding: 15px;
+//           width: 520px;
+//         }
+//         input::placeholder {
+//           color: #e6e6e6;
+//           font-style: italic;
+//           font-weight: 100;
+//         }
+//         .todo {
+//           border-top: 1px solid #ededed;
+//           padding: 15px;
+//         }
+//         .todo-text {
+//           font-weight: 300;
+//         }
+//       `}
+//       </style>
+//     </Helmet>
+//       <h1>todos</h1>
+//       <div className="container">
+//         <input
+//           onChange={handleOnChange}
+//           onKeyDown={handleOnKeydown}
+//           placeholder="What needs to be done?"
+//           value={inputText}
+//           type="text"
+//         />
+//         {todos.map(todo => (
+//           <div className="todo">
+//             <div className="todo-text">{todo}</div>
+//           </div>
+//         ))}
+//       </div>
+//     </React.Fragment>
+//   );
+// }
+// export default <Root />;
 
 
 
 const Root = () => {
-  const [todos, setTodos] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-  const [inputText, setInputText] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2___default()('/api/todos').then(async res => await res.json()).then(res => setTodos(res));
-  }, []);
-
-  const handleOnKeydown = e => {
-    if (e.key === 'Enter') {
-      setInputText('');
-      setTodos([...todos, inputText]);
-      isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2___default()('/api/todos', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          value: inputText
-        })
-      });
-    }
-  };
-
-  const handleOnChange = e => {
-    setInputText(e.currentTarget.value);
-  };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 105,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_1__["Helmet"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 106,
       columnNumber: 7
     }
-  }, "\n        body {\n          background-color: #f5f5f5;\n          font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;\n        }\n        h1 {\n          color: rgba(175, 47, 47, 0.15);\n          font-size: 100px;\n          font-weight: 100;\n          text-align: center;\n        }\n        .container {\n          background: #ffffff;\n          border: 1px solid #ededed;\n          margin: 0 auto;\n          width: 550px;\n        }\n        input {\n          border: none;\n          font-size: 24px;\n          font-weight: 300;\n          padding: 15px;\n          width: 520px;\n        }\n        input::placeholder {\n          color: #e6e6e6;\n          font-style: italic;\n          font-weight: 100;\n        }\n        .todo {\n          border-top: 1px solid #ededed;\n          padding: 15px;\n        }\n        .todo-text {\n          font-weight: 300;\n        }\n      ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79,
-      columnNumber: 7
-    }
-  }, "todos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    onChange: handleOnChange,
-    onKeyDown: handleOnKeydown,
-    placeholder: "What needs to be done?",
-    value: inputText,
-    type: "text",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81,
-      columnNumber: 9
-    }
-  }), todos.map(todo => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "todo",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 11
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "todo-text",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90,
-      columnNumber: 13
-    }
-  }, todo)))));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Root, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 98,
+    lineNumber: 111,
     columnNumber: 16
   }
 }));
+
+/***/ }),
+
+/***/ "./src/components/todosData.js":
+/*!*************************************!*\
+  !*** ./src/components/todosData.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const todosData = [{
+  id: 1,
+  text: "Take out the trash",
+  completed: true
+}, {
+  id: 2,
+  text: "Grocery shopping",
+  completed: false
+}, {
+  id: 3,
+  text: "Clean gecko tank",
+  completed: false
+}, {
+  id: 4,
+  text: "Mow lawn",
+  completed: true
+}, {
+  id: 5,
+  text: "Catch up on Arrested Development",
+  completed: false
+}];
+/* harmony default export */ __webpack_exports__["default"] = (todosData);
 
 /***/ }),
 
