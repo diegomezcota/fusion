@@ -86,7 +86,7 @@ const Root = () => {
           type="text"
         />
         {todos.map(todo => (
-          <div className="todo">
+          <div className="todo" key={todo}>
             <div className="todo-text">{todo}</div>
           </div>
         ))}

@@ -35,7 +35,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "5d74606a2dd928c5eb71";
+/******/ 	var hotCurrentHash = "410ced6473b440817708";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1895,6 +1895,7 @@ const Root = () => {
     }
   }), todos.map(todo => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "todo",
+    key: todo,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
