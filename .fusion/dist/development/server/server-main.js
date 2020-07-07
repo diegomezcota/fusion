@@ -35,7 +35,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "2c5bf5f8db1de27230f5";
+/******/ 	var hotCurrentHash = "1070d759aca6e063e476";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1773,119 +1773,43 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _todosData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./todosData */ "./src/components/todosData.js");
-/* harmony import */ var _TodoItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TodoItem */ "./src/components/TodoItem.js");
 var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js";
-
-
 
 
 class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor() {
     super();
     this.state = {
-      todos: _todosData__WEBPACK_IMPORTED_MODULE_1__["default"]
+      loading: false,
+      data: {}
     };
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(id) {
-    this.setState(prevState => {
-      const updatedTodos = prevState.todos.map(todo => {
-        if (todo.id === id) {
-          todo.completed = !todo.completed;
-        }
-
-        return todo;
-      });
-      return {
-        todos: updatedTodos
-      };
+  componentDidMount() {
+    this.setState({
+      loading: true
     });
+    fetch("https://swapi.dev/api/people/1").then(response => response.json()).then(data => this.setState({
+      data: data,
+      loading: false
+    }));
   }
 
   render() {
-    const todoItems = this.state.todos.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TodoItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      key: item.id,
-      item: item,
-      handleChange: this.handleChange,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 56
-      }
-    }));
+    let message = this.state.loading ? 'Loading...' : this.state.data.name;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "todo-list",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 25,
         columnNumber: 13
       }
-    }, todoItems);
+    }, message);
   }
 
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
-
-/***/ }),
-
-/***/ "./src/components/TodoItem.js":
-/*!************************************!*\
-  !*** ./src/components/TodoItem.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js";
-
-const completedStyle = {
-  fontStyle: "italic",
-  color: "#cdcdcd",
-  textDecoration: "line-through"
-};
-
-class TodoItem extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "todo-item",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13,
-        columnNumber: 13
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-      type: "checkbox",
-      checked: this.props.item.completed,
-      onChange: () => this.props.handleChange(this.props.item.id),
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 17
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      style: this.props.item.completed ? completedStyle : null,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 17
-      }
-    }, this.props.item.text));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (TodoItem);
 
 /***/ }),
 
@@ -2023,40 +1947,6 @@ const Root = () => {
     columnNumber: 16
   }
 }));
-
-/***/ }),
-
-/***/ "./src/components/todosData.js":
-/*!*************************************!*\
-  !*** ./src/components/todosData.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const todosData = [{
-  id: 1,
-  text: "Take out the trash",
-  completed: true
-}, {
-  id: 2,
-  text: "Grocery shopping",
-  completed: false
-}, {
-  id: 3,
-  text: "Clean gecko tank",
-  completed: false
-}, {
-  id: 4,
-  text: "Mow lawn",
-  completed: true
-}, {
-  id: 5,
-  text: "Catch up on Arrested Development",
-  completed: false
-}];
-/* harmony default export */ __webpack_exports__["default"] = (todosData);
 
 /***/ }),
 

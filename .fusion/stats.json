@@ -2,27 +2,27 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "2c5bf5f8db1de27230f5",
+  "hash": "1070d759aca6e063e476",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "2c5bf5f8db1de27230f5",
-      "time": 451,
-      "builtAt": 1594013619416,
+      "hash": "1070d759aca6e063e476",
+      "time": 462,
+      "builtAt": 1594098617678,
       "publicPath": "",
       "outputPath": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\.fusion\\dist\\development\\server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.434d9d2768a2f0ccf48b.hot-update.js",
+          "main.dbd9db4e4e1276bb5740.hot-update.js",
           "server-main.js.map",
-          "main.434d9d2768a2f0ccf48b.hot-update.js.map"
+          "main.dbd9db4e4e1276bb5740.hot-update.js.map"
         ]
       },
       "assets": [
         {
-          "name": "434d9d2768a2f0ccf48b.hot-update.json",
+          "name": "dbd9db4e4e1276bb5740.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -33,8 +33,8 @@
           "emitted": true
         },
         {
-          "name": "main.434d9d2768a2f0ccf48b.hot-update.js",
-          "size": 2437,
+          "name": "main.dbd9db4e4e1276bb5740.hot-update.js",
+          "size": 2033,
           "chunks": [
             "main"
           ],
@@ -48,8 +48,8 @@
           "emitted": true
         },
         {
-          "name": "main.434d9d2768a2f0ccf48b.hot-update.js.map",
-          "size": 1202,
+          "name": "main.dbd9db4e4e1276bb5740.hot-update.js.map",
+          "size": 1213,
           "chunks": [
             "main"
           ],
@@ -63,7 +63,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 85247,
+          "size": 81846,
           "chunks": [
             "main"
           ],
@@ -75,7 +75,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 70160,
+          "size": 67907,
           "chunks": [
             "main"
           ],
@@ -96,9 +96,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.434d9d2768a2f0ccf48b.hot-update.js",
+            "main.dbd9db4e4e1276bb5740.hot-update.js",
             "server-main.js.map",
-            "main.434d9d2768a2f0ccf48b.hot-update.js.map"
+            "main.dbd9db4e4e1276bb5740.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -111,9 +111,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.434d9d2768a2f0ccf48b.hot-update.js",
+            "main.dbd9db4e4e1276bb5740.hot-update.js",
             "server-main.js.map",
-            "main.434d9d2768a2f0ccf48b.hot-update.js.map"
+            "main.dbd9db4e4e1276bb5740.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -125,17 +125,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 29733,
+          "size": 27811,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.434d9d2768a2f0ccf48b.hot-update.js",
+            "main.dbd9db4e4e1276bb5740.hot-update.js",
             "server-main.js.map",
-            "main.434d9d2768a2f0ccf48b.hot-update.js.map"
+            "main.dbd9db4e4e1276bb5740.hot-update.js.map"
           ],
-          "hash": "f7e5c4f8edf7cff7ede2",
+          "hash": "bb1cb2c9e739b1700fae",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -146,7 +146,7 @@
               "identifier": "multi C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-public-path.js C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\webpack\\hot\\poll.js?1000 C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
               "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
               "index": 0,
-              "index2": 36,
+              "index2": 34,
               "size": 52,
               "built": false,
               "optional": false,
@@ -664,7 +664,7 @@
               "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
               "name": "./node_modules/fusion-cli/entries/server-entry.js",
               "index": 7,
-              "index2": 35,
+              "index2": 33,
               "size": 3012,
               "cacheable": true,
               "built": false,
@@ -1317,10 +1317,10 @@
               "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
               "name": "./src/components/App.js",
               "index": 31,
-              "index2": 29,
-              "size": 1258,
+              "index2": 27,
+              "size": 821,
               "cacheable": true,
-              "built": false,
+              "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -1380,89 +1380,14 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\App.js\";\nimport React from 'react';\nimport todosData from './todosData';\nimport TodoItem from './TodoItem';\n\nclass App extends React.Component {\n  constructor() {\n    super();\n    this.state = {\n      todos: todosData\n    };\n    this.handleChange = this.handleChange.bind(this);\n  }\n\n  handleChange(id) {\n    this.setState(prevState => {\n      const updatedTodos = prevState.todos.map(todo => {\n        if (todo.id === id) {\n          todo.completed = !todo.completed;\n        }\n\n        return todo;\n      });\n      return {\n        todos: updatedTodos\n      };\n    });\n  }\n\n  render() {\n    const todoItems = this.state.todos.map(item => /*#__PURE__*/React.createElement(TodoItem, {\n      key: item.id,\n      item: item,\n      handleChange: this.handleChange,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 29,\n        columnNumber: 56\n      }\n    }));\n    return /*#__PURE__*/React.createElement(\"div\", {\n      className: \"todo-list\",\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 32,\n        columnNumber: 13\n      }\n    }, todoItems);\n  }\n\n}\n\nexport default App;"
-            },
-            {
-              "id": "./src/components/TodoItem.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-              "name": "./src/components/TodoItem.js",
-              "index": 33,
-              "index2": 28,
-              "size": 1127,
-              "cacheable": true,
-              "built": true,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                "main"
-              ],
-              "issuer": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "issuerId": "./src/components/App.js",
-              "issuerName": "./src/components/App.js",
-              "issuerPath": [
-                {
-                  "id": 0,
-                  "identifier": "multi C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-public-path.js C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\webpack\\hot\\poll.js?1000 C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
-                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
-                  "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
-                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./src/main.js",
-                  "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\main.js",
-                  "name": "./src/main.js"
-                },
-                {
-                  "id": "./src/components/root.js",
-                  "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js",
-                  "name": "./src/components/root.js"
-                },
-                {
-                  "id": "./src/components/App.js",
-                  "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-                  "name": "./src/components/App.js"
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleId": "./src/components/App.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-                  "module": "./src/components/App.js",
-                  "moduleName": "./src/components/App.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "./TodoItem",
-                  "loc": "4:0-34"
-                },
-                {
-                  "moduleId": "./src/components/App.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-                  "module": "./src/components/App.js",
-                  "moduleName": "./src/components/App.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "./TodoItem",
-                  "loc": "31:84-92"
-                }
-              ],
-              "providedExports": [
-                "default"
-              ],
-              "optimizationBailout": [],
-              "depth": 5,
-              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\TodoItem.js\";\nimport React from 'react';\nconst completedStyle = {\n  fontStyle: \"italic\",\n  color: \"#cdcdcd\",\n  textDecoration: \"line-through\"\n};\n\nclass TodoItem extends React.Component {\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      className: \"todo-item\",\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 13,\n        columnNumber: 13\n      }\n    }, /*#__PURE__*/React.createElement(\"input\", {\n      type: \"checkbox\",\n      checked: this.props.item.completed,\n      onChange: () => this.props.handleChange(this.props.item.id),\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 14,\n        columnNumber: 17\n      }\n    }), /*#__PURE__*/React.createElement(\"p\", {\n      style: this.props.item.completed ? completedStyle : null,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 20,\n        columnNumber: 17\n      }\n    }, this.props.item.text));\n  }\n\n}\n\nexport default TodoItem;"
+              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\App.js\";\nimport React from 'react';\n\nclass App extends React.Component {\n  constructor() {\n    super();\n    this.state = {\n      loading: false,\n      data: {}\n    };\n  }\n\n  componentDidMount() {\n    this.setState({\n      loading: true\n    });\n    fetch(\"https://swapi.dev/api/people/1\").then(response => response.json()).then(data => this.setState({\n      data: data,\n      loading: false\n    }));\n  }\n\n  render() {\n    let message = this.state.loading ? 'Loading...' : this.state.data.name;\n    return /*#__PURE__*/React.createElement(\"div\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25,\n        columnNumber: 13\n      }\n    }, message);\n  }\n\n}\n\nexport default App;"
             },
             {
               "id": "./src/components/root.js",
               "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js",
               "name": "./src/components/root.js",
               "index": 29,
-              "index2": 30,
+              "index2": 28,
               "size": 3227,
               "cacheable": true,
               "built": false,
@@ -1523,86 +1448,11 @@
               "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\root.js\";\n// import React, {useState, useEffect} from 'react';\n// import {Helmet} from 'fusion-plugin-react-helmet-async';\n// import fetch from 'isomorphic-fetch';\n// const Root = () => {\n//   const [todos, setTodos] = useState([]);\n//   const [inputText, setInputText] = useState('');\n//   useEffect(() => {\n//     fetch('/api/todos')\n//       .then(async res => await res.json())\n//       .then(res => setTodos(res));\n//   }, []);\n//   const handleOnKeydown = (e) => {\n//     if (e.key === 'Enter') {\n//       setInputText('');\n//       setTodos([\n//         ...todos,\n//         inputText\n//       ]);\n//       fetch('/api/todos', {\n//         method: 'POST',\n//         headers: {\n//           'Content-Type': 'application/json',\n//         },\n//         body: JSON.stringify({value: inputText}),\n//       });\n//     }\n//   };\n//   const handleOnChange = (e) => {\n//     setInputText(e.currentTarget.value);\n//   };\n//   return (\n//     <React.Fragment>\n//         <Helmet>\n//       <style>\n//       {`\n//         body {\n//           background-color: #f5f5f5;\n//           font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;\n//         }\n//         h1 {\n//           color: rgba(175, 47, 47, 0.15);\n//           font-size: 100px;\n//           font-weight: 100;\n//           text-align: center;\n//         }\n//         .container {\n//           background: #ffffff;\n//           border: 1px solid #ededed;\n//           margin: 0 auto;\n//           width: 550px;\n//         }\n//         input {\n//           border: none;\n//           font-size: 24px;\n//           font-weight: 300;\n//           padding: 15px;\n//           width: 520px;\n//         }\n//         input::placeholder {\n//           color: #e6e6e6;\n//           font-style: italic;\n//           font-weight: 100;\n//         }\n//         .todo {\n//           border-top: 1px solid #ededed;\n//           padding: 15px;\n//         }\n//         .todo-text {\n//           font-weight: 300;\n//         }\n//       `}\n//       </style>\n//     </Helmet>\n//       <h1>todos</h1>\n//       <div className=\"container\">\n//         <input\n//           onChange={handleOnChange}\n//           onKeyDown={handleOnKeydown}\n//           placeholder=\"What needs to be done?\"\n//           value={inputText}\n//           type=\"text\"\n//         />\n//         {todos.map(todo => (\n//           <div className=\"todo\">\n//             <div className=\"todo-text\">{todo}</div>\n//           </div>\n//         ))}\n//       </div>\n//     </React.Fragment>\n//   );\n// }\n// export default <Root />;\nimport React from 'react';\nimport App from \"./App.js\";\n\nconst Root = () => {\n  return /*#__PURE__*/React.createElement(React.Fragment, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 105,\n      columnNumber: 5\n    }\n  }, /*#__PURE__*/React.createElement(App, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 106,\n      columnNumber: 7\n    }\n  }));\n};\n\nexport default /*#__PURE__*/React.createElement(Root, {\n  __self: this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 111,\n    columnNumber: 16\n  }\n});"
             },
             {
-              "id": "./src/components/todosData.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\todosData.js",
-              "name": "./src/components/todosData.js",
-              "index": 32,
-              "index2": 27,
-              "size": 358,
-              "cacheable": true,
-              "built": false,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                "main"
-              ],
-              "issuer": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "issuerId": "./src/components/App.js",
-              "issuerName": "./src/components/App.js",
-              "issuerPath": [
-                {
-                  "id": 0,
-                  "identifier": "multi C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-public-path.js C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\webpack\\hot\\poll.js?1000 C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
-                  "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./node_modules/fusion-cli/entries/server-entry.js",
-                  "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
-                  "name": "./node_modules/fusion-cli/entries/server-entry.js"
-                },
-                {
-                  "id": "./src/main.js",
-                  "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\main.js",
-                  "name": "./src/main.js"
-                },
-                {
-                  "id": "./src/components/root.js",
-                  "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js",
-                  "name": "./src/components/root.js"
-                },
-                {
-                  "id": "./src/components/App.js",
-                  "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-                  "name": "./src/components/App.js"
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleId": "./src/components/App.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-                  "module": "./src/components/App.js",
-                  "moduleName": "./src/components/App.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "./todosData",
-                  "loc": "3:0-36"
-                },
-                {
-                  "moduleId": "./src/components/App.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-                  "module": "./src/components/App.js",
-                  "moduleName": "./src/components/App.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "./todosData",
-                  "loc": "10:13-22"
-                }
-              ],
-              "providedExports": [
-                "default"
-              ],
-              "optimizationBailout": [],
-              "depth": 5,
-              "source": "const todosData = [{\n  id: 1,\n  text: \"Take out the trash\",\n  completed: true\n}, {\n  id: 2,\n  text: \"Grocery shopping\",\n  completed: false\n}, {\n  id: 3,\n  text: \"Clean gecko tank\",\n  completed: false\n}, {\n  id: 4,\n  text: \"Mow lawn\",\n  completed: true\n}, {\n  id: 5,\n  text: \"Catch up on Arrested Development\",\n  completed: false\n}];\nexport default todosData;"
-            },
-            {
               "id": "./src/main.js",
               "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\main.js",
               "name": "./src/main.js",
               "index": 27,
-              "index2": 34,
+              "index2": 32,
               "size": 402,
               "cacheable": true,
               "built": false,
@@ -1670,8 +1520,8 @@
               "id": "./src/plugins/todos.js",
               "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\plugins\\todos.js",
               "name": "./src/plugins/todos.js",
-              "index": 34,
-              "index2": 31,
+              "index": 32,
+              "index2": 29,
               "size": 363,
               "cacheable": true,
               "built": false,
@@ -2117,8 +1967,8 @@
               "id": "fusion-plugin-react-helmet-async",
               "identifier": "external \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\node_modules\\\\fusion-plugin-react-helmet-async\\\\dist-node-cjs\\\\index.js\"",
               "name": "external \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\node_modules\\\\fusion-plugin-react-helmet-async\\\\dist-node-cjs\\\\index.js\"",
-              "index": 35,
-              "index2": 32,
+              "index": 33,
+              "index2": 30,
               "size": 42,
               "built": false,
               "optional": false,
@@ -2295,8 +2145,8 @@
               "id": "koa-bodyparser",
               "identifier": "external \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\node_modules\\\\koa-bodyparser\\\\index.js\"",
               "name": "external \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\node_modules\\\\koa-bodyparser\\\\index.js\"",
-              "index": 36,
-              "index2": 33,
+              "index": 34,
+              "index2": 31,
               "size": 42,
               "built": false,
               "optional": false,
@@ -2585,7 +2435,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "6:18-23"
+                  "loc": "4:18-23"
                 },
                 {
                   "moduleId": "./src/components/App.js",
@@ -2594,61 +2444,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "31:64-69"
-                },
-                {
-                  "moduleId": "./src/components/App.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-                  "module": "./src/components/App.js",
-                  "moduleName": "./src/components/App.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "42:24-29"
-                },
-                {
-                  "moduleId": "./src/components/TodoItem.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-                  "module": "./src/components/TodoItem.js",
-                  "moduleName": "./src/components/TodoItem.js",
-                  "type": "harmony side effect evaluation",
-                  "userRequest": "react",
-                  "loc": "2:0-26"
-                },
-                {
-                  "moduleId": "./src/components/TodoItem.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-                  "module": "./src/components/TodoItem.js",
-                  "moduleName": "./src/components/TodoItem.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "9:23-28"
-                },
-                {
-                  "moduleId": "./src/components/TodoItem.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-                  "module": "./src/components/TodoItem.js",
-                  "moduleName": "./src/components/TodoItem.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "11:24-29"
-                },
-                {
-                  "moduleId": "./src/components/TodoItem.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-                  "module": "./src/components/TodoItem.js",
-                  "moduleName": "./src/components/TodoItem.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "19:20-25"
-                },
-                {
-                  "moduleId": "./src/components/TodoItem.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-                  "module": "./src/components/TodoItem.js",
-                  "moduleName": "./src/components/TodoItem.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "29:21-26"
+                  "loc": "25:24-29"
                 },
                 {
                   "moduleId": "./src/components/root.js",
@@ -2832,7 +2628,7 @@
           "identifier": "multi C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-public-path.js C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\webpack\\hot\\poll.js?1000 C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
           "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js",
           "index": 0,
-          "index2": 36,
+          "index2": 34,
           "size": 52,
           "built": false,
           "optional": false,
@@ -3350,7 +3146,7 @@
           "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
           "name": "./node_modules/fusion-cli/entries/server-entry.js",
           "index": 7,
-          "index2": 35,
+          "index2": 33,
           "size": 3012,
           "cacheable": true,
           "built": false,
@@ -4003,10 +3799,10 @@
           "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
           "name": "./src/components/App.js",
           "index": 31,
-          "index2": 29,
-          "size": 1258,
+          "index2": 27,
+          "size": 821,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -4066,89 +3862,14 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\App.js\";\nimport React from 'react';\nimport todosData from './todosData';\nimport TodoItem from './TodoItem';\n\nclass App extends React.Component {\n  constructor() {\n    super();\n    this.state = {\n      todos: todosData\n    };\n    this.handleChange = this.handleChange.bind(this);\n  }\n\n  handleChange(id) {\n    this.setState(prevState => {\n      const updatedTodos = prevState.todos.map(todo => {\n        if (todo.id === id) {\n          todo.completed = !todo.completed;\n        }\n\n        return todo;\n      });\n      return {\n        todos: updatedTodos\n      };\n    });\n  }\n\n  render() {\n    const todoItems = this.state.todos.map(item => /*#__PURE__*/React.createElement(TodoItem, {\n      key: item.id,\n      item: item,\n      handleChange: this.handleChange,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 29,\n        columnNumber: 56\n      }\n    }));\n    return /*#__PURE__*/React.createElement(\"div\", {\n      className: \"todo-list\",\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 32,\n        columnNumber: 13\n      }\n    }, todoItems);\n  }\n\n}\n\nexport default App;"
-        },
-        {
-          "id": "./src/components/TodoItem.js",
-          "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-          "name": "./src/components/TodoItem.js",
-          "index": 33,
-          "index2": 28,
-          "size": 1127,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "main"
-          ],
-          "issuer": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-          "issuerId": "./src/components/App.js",
-          "issuerName": "./src/components/App.js",
-          "issuerPath": [
-            {
-              "id": 0,
-              "identifier": "multi C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-public-path.js C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\webpack\\hot\\poll.js?1000 C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
-              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./node_modules/fusion-cli/entries/server-entry.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
-              "name": "./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./src/main.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\main.js",
-              "name": "./src/main.js"
-            },
-            {
-              "id": "./src/components/root.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js",
-              "name": "./src/components/root.js"
-            },
-            {
-              "id": "./src/components/App.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "name": "./src/components/App.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "./src/components/App.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "module": "./src/components/App.js",
-              "moduleName": "./src/components/App.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "./TodoItem",
-              "loc": "4:0-34"
-            },
-            {
-              "moduleId": "./src/components/App.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "module": "./src/components/App.js",
-              "moduleName": "./src/components/App.js",
-              "type": "harmony import specifier",
-              "userRequest": "./TodoItem",
-              "loc": "31:84-92"
-            }
-          ],
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 5,
-          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\TodoItem.js\";\nimport React from 'react';\nconst completedStyle = {\n  fontStyle: \"italic\",\n  color: \"#cdcdcd\",\n  textDecoration: \"line-through\"\n};\n\nclass TodoItem extends React.Component {\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      className: \"todo-item\",\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 13,\n        columnNumber: 13\n      }\n    }, /*#__PURE__*/React.createElement(\"input\", {\n      type: \"checkbox\",\n      checked: this.props.item.completed,\n      onChange: () => this.props.handleChange(this.props.item.id),\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 14,\n        columnNumber: 17\n      }\n    }), /*#__PURE__*/React.createElement(\"p\", {\n      style: this.props.item.completed ? completedStyle : null,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 20,\n        columnNumber: 17\n      }\n    }, this.props.item.text));\n  }\n\n}\n\nexport default TodoItem;"
+          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\App.js\";\nimport React from 'react';\n\nclass App extends React.Component {\n  constructor() {\n    super();\n    this.state = {\n      loading: false,\n      data: {}\n    };\n  }\n\n  componentDidMount() {\n    this.setState({\n      loading: true\n    });\n    fetch(\"https://swapi.dev/api/people/1\").then(response => response.json()).then(data => this.setState({\n      data: data,\n      loading: false\n    }));\n  }\n\n  render() {\n    let message = this.state.loading ? 'Loading...' : this.state.data.name;\n    return /*#__PURE__*/React.createElement(\"div\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25,\n        columnNumber: 13\n      }\n    }, message);\n  }\n\n}\n\nexport default App;"
         },
         {
           "id": "./src/components/root.js",
           "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js",
           "name": "./src/components/root.js",
           "index": 29,
-          "index2": 30,
+          "index2": 28,
           "size": 3227,
           "cacheable": true,
           "built": false,
@@ -4209,86 +3930,11 @@
           "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\root.js\";\n// import React, {useState, useEffect} from 'react';\n// import {Helmet} from 'fusion-plugin-react-helmet-async';\n// import fetch from 'isomorphic-fetch';\n// const Root = () => {\n//   const [todos, setTodos] = useState([]);\n//   const [inputText, setInputText] = useState('');\n//   useEffect(() => {\n//     fetch('/api/todos')\n//       .then(async res => await res.json())\n//       .then(res => setTodos(res));\n//   }, []);\n//   const handleOnKeydown = (e) => {\n//     if (e.key === 'Enter') {\n//       setInputText('');\n//       setTodos([\n//         ...todos,\n//         inputText\n//       ]);\n//       fetch('/api/todos', {\n//         method: 'POST',\n//         headers: {\n//           'Content-Type': 'application/json',\n//         },\n//         body: JSON.stringify({value: inputText}),\n//       });\n//     }\n//   };\n//   const handleOnChange = (e) => {\n//     setInputText(e.currentTarget.value);\n//   };\n//   return (\n//     <React.Fragment>\n//         <Helmet>\n//       <style>\n//       {`\n//         body {\n//           background-color: #f5f5f5;\n//           font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;\n//         }\n//         h1 {\n//           color: rgba(175, 47, 47, 0.15);\n//           font-size: 100px;\n//           font-weight: 100;\n//           text-align: center;\n//         }\n//         .container {\n//           background: #ffffff;\n//           border: 1px solid #ededed;\n//           margin: 0 auto;\n//           width: 550px;\n//         }\n//         input {\n//           border: none;\n//           font-size: 24px;\n//           font-weight: 300;\n//           padding: 15px;\n//           width: 520px;\n//         }\n//         input::placeholder {\n//           color: #e6e6e6;\n//           font-style: italic;\n//           font-weight: 100;\n//         }\n//         .todo {\n//           border-top: 1px solid #ededed;\n//           padding: 15px;\n//         }\n//         .todo-text {\n//           font-weight: 300;\n//         }\n//       `}\n//       </style>\n//     </Helmet>\n//       <h1>todos</h1>\n//       <div className=\"container\">\n//         <input\n//           onChange={handleOnChange}\n//           onKeyDown={handleOnKeydown}\n//           placeholder=\"What needs to be done?\"\n//           value={inputText}\n//           type=\"text\"\n//         />\n//         {todos.map(todo => (\n//           <div className=\"todo\">\n//             <div className=\"todo-text\">{todo}</div>\n//           </div>\n//         ))}\n//       </div>\n//     </React.Fragment>\n//   );\n// }\n// export default <Root />;\nimport React from 'react';\nimport App from \"./App.js\";\n\nconst Root = () => {\n  return /*#__PURE__*/React.createElement(React.Fragment, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 105,\n      columnNumber: 5\n    }\n  }, /*#__PURE__*/React.createElement(App, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 106,\n      columnNumber: 7\n    }\n  }));\n};\n\nexport default /*#__PURE__*/React.createElement(Root, {\n  __self: this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 111,\n    columnNumber: 16\n  }\n});"
         },
         {
-          "id": "./src/components/todosData.js",
-          "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\todosData.js",
-          "name": "./src/components/todosData.js",
-          "index": 32,
-          "index2": 27,
-          "size": 358,
-          "cacheable": true,
-          "built": false,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "main"
-          ],
-          "issuer": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-          "issuerId": "./src/components/App.js",
-          "issuerName": "./src/components/App.js",
-          "issuerPath": [
-            {
-              "id": 0,
-              "identifier": "multi C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-public-path.js C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\webpack\\hot\\poll.js?1000 C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
-              "name": "multi ./node_modules/fusion-cli/entries/server-public-path.js (webpack)/hot/poll.js?1000 ./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./node_modules/fusion-cli/entries/server-entry.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\entries\\server-entry.js",
-              "name": "./node_modules/fusion-cli/entries/server-entry.js"
-            },
-            {
-              "id": "./src/main.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\main.js",
-              "name": "./src/main.js"
-            },
-            {
-              "id": "./src/components/root.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js",
-              "name": "./src/components/root.js"
-            },
-            {
-              "id": "./src/components/App.js",
-              "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "name": "./src/components/App.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "./src/components/App.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "module": "./src/components/App.js",
-              "moduleName": "./src/components/App.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "./todosData",
-              "loc": "3:0-36"
-            },
-            {
-              "moduleId": "./src/components/App.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "module": "./src/components/App.js",
-              "moduleName": "./src/components/App.js",
-              "type": "harmony import specifier",
-              "userRequest": "./todosData",
-              "loc": "10:13-22"
-            }
-          ],
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 5,
-          "source": "const todosData = [{\n  id: 1,\n  text: \"Take out the trash\",\n  completed: true\n}, {\n  id: 2,\n  text: \"Grocery shopping\",\n  completed: false\n}, {\n  id: 3,\n  text: \"Clean gecko tank\",\n  completed: false\n}, {\n  id: 4,\n  text: \"Mow lawn\",\n  completed: true\n}, {\n  id: 5,\n  text: \"Catch up on Arrested Development\",\n  completed: false\n}];\nexport default todosData;"
-        },
-        {
           "id": "./src/main.js",
           "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\main.js",
           "name": "./src/main.js",
           "index": 27,
-          "index2": 34,
+          "index2": 32,
           "size": 402,
           "cacheable": true,
           "built": false,
@@ -4356,8 +4002,8 @@
           "id": "./src/plugins/todos.js",
           "identifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\plugins\\todos.js",
           "name": "./src/plugins/todos.js",
-          "index": 34,
-          "index2": 31,
+          "index": 32,
+          "index2": 29,
           "size": 363,
           "cacheable": true,
           "built": false,
@@ -4803,8 +4449,8 @@
           "id": "fusion-plugin-react-helmet-async",
           "identifier": "external \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\node_modules\\\\fusion-plugin-react-helmet-async\\\\dist-node-cjs\\\\index.js\"",
           "name": "external \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\node_modules\\\\fusion-plugin-react-helmet-async\\\\dist-node-cjs\\\\index.js\"",
-          "index": 35,
-          "index2": 32,
+          "index": 33,
+          "index2": 30,
           "size": 42,
           "built": false,
           "optional": false,
@@ -4981,8 +4627,8 @@
           "id": "koa-bodyparser",
           "identifier": "external \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\node_modules\\\\koa-bodyparser\\\\index.js\"",
           "name": "external \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\node_modules\\\\koa-bodyparser\\\\index.js\"",
-          "index": 36,
-          "index2": 33,
+          "index": 34,
+          "index2": 31,
           "size": 42,
           "built": false,
           "optional": false,
@@ -5271,7 +4917,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "6:18-23"
+              "loc": "4:18-23"
             },
             {
               "moduleId": "./src/components/App.js",
@@ -5280,61 +4926,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "31:64-69"
-            },
-            {
-              "moduleId": "./src/components/App.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js",
-              "module": "./src/components/App.js",
-              "moduleName": "./src/components/App.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "42:24-29"
-            },
-            {
-              "moduleId": "./src/components/TodoItem.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-              "module": "./src/components/TodoItem.js",
-              "moduleName": "./src/components/TodoItem.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react",
-              "loc": "2:0-26"
-            },
-            {
-              "moduleId": "./src/components/TodoItem.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-              "module": "./src/components/TodoItem.js",
-              "moduleName": "./src/components/TodoItem.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "9:23-28"
-            },
-            {
-              "moduleId": "./src/components/TodoItem.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-              "module": "./src/components/TodoItem.js",
-              "moduleName": "./src/components/TodoItem.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "11:24-29"
-            },
-            {
-              "moduleId": "./src/components/TodoItem.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-              "module": "./src/components/TodoItem.js",
-              "moduleName": "./src/components/TodoItem.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "19:20-25"
-            },
-            {
-              "moduleId": "./src/components/TodoItem.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\TodoItem.js",
-              "module": "./src/components/TodoItem.js",
-              "moduleName": "./src/components/TodoItem.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "29:21-26"
+              "loc": "25:24-29"
             },
             {
               "moduleId": "./src/components/root.js",
