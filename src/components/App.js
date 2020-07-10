@@ -21,25 +21,32 @@ class App extends Component {
         this.state = {
             firstName : "",
             lastName : "",
-            Age : "",
+            age : "",
             gender : "",
             location : "",
-            dietaryRestrictions : [],
-            isVegetarian : false,
-            isLactoseIntolerant : false
+            dietaryRestrictions : {
+                isVegetarian : false,
+                isLactoseIntolerant : false
+            }
         }
         this.handleChange = this.handleChange.bind(this)
     }
     
     handleChange(event){
         const {value, name, type, checked} = event.target
-        type === 'checkbox' ? this.setState({[name] : checked}) : this.setState({[name] : value})
+        type === 'checkbox' ? 
+            this.setState(prevState => {
+                return {
+                    dietaryRestrictions : {
+                        ...prevState.dietaryRestrictions,
+                        [name] : checked
+                    }
+                }
+            }) 
+            : this.setState({[name] : value})
     }
 
     render() {
-        let restrictions = []
-        if (this.state.isVegetarian) restrictions.push('vegetarian')
-        if (this.state.isLactoseIntolerant) restrictions.push('lactose intolerant')
         return (
             <main>
                 <form>
@@ -58,28 +65,33 @@ class App extends Component {
                     />
                     <br />
                     <input 
-                        name = "Age"
-                        value = {this.state.Age}
+                        name = "age"
+                        value = {this.state.age}
                         placeholder="Age" 
                         onChange={this.handleChange}
                     />
                     <br />
                     
                     {/* Create radio buttons for gender here */}
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="male"
-                        checked={this.state.gender === 'male'}
-                        onChange={this.handleChange}
-                    />Male
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="female"
-                        checked={this.state.gender === 'female'}
-                        onChange={this.handleChange}
-                    />Female
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="male"
+                            checked={this.state.gender === 'male'}
+                            onChange={this.handleChange}
+                        />Male
+                    </label>
+                    <br />
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="female"
+                            checked={this.state.gender === 'female'}
+                            onChange={this.handleChange}
+                        />Female
+                    </label>
                     <br />
                     
                     {/* Create select box for location here */}
@@ -88,6 +100,7 @@ class App extends Component {
                         onChange={this.handleChange}
                         name="location"
                     >
+                        <option value="">-- Please Choose a destination --</option>
                         <option value="Hawaii">Hawaii</option>
                         <option value="Los Mochis">Los Mochis</option>
                         <option value="Monterrey">Monterrey</option>
@@ -95,35 +108,36 @@ class App extends Component {
                     <br />
                     
                     {/* Create check boxes for dietary restrictions here */}
-                    <input
-                        type="checkbox"
-                        name="isVegetarian"
-                        checked={this.state.isVegetarian}
-                        onChange={this.handleChange}
-                    />Vegetarian
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="isVegetarian"
+                            checked={this.state.dietaryRestrictions.isVegetarian}
+                            onChange={this.handleChange}
+                        />Vegetarian
+                    </label>
                     <br />
-                    <input
-                        type="checkbox"
-                        name="isLactoseIntolerant"
-                        checked={this.state.isLactoseIntolerant}
-                        onChange={this.handleChange}
-                    />Lactose Intolerant
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="isLactoseIntolerant"
+                            checked={this.state.dietaryRestrictions.isLactoseIntolerant}
+                            onChange={this.handleChange}
+                        />Lactose Intolerant
+                    </label>
                     <br />
                     <button>Submit</button>
                 </form>
                 <hr />
                 <h2>Entered information:</h2>
                 <p>Your name: {this.state.firstName} {this.state.lastName}</p>
-                <p>Your age: {this.state.Age}</p>
+                <p>Your age: {this.state.age}</p>
                 <p>Your gender: {this.state.gender}</p>
                 <p>Your destination: {this.state.location}</p>
-                <p>
-                    Your dietary restrictions: 
+                <p>Your dietary restrictions: </p>
                     {/* Dietary restrictions here, comma separated */}
-                    {for (let i = 0; i < restrictions.length; i++){
-                        restrictions[i]
-                    }} 
-                </p>
+                {this.state.dietaryRestrictions.isVegetarian && <p>Vegetarian</p>}
+                {this.state.dietaryRestrictions.isLactoseIntolerant && <p>Lactose Intolerant</p>}
             </main>
         )
     }

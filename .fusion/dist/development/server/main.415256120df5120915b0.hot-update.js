@@ -1,4 +1,17 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+if (process.env.NODE_ENV && process.env.NODE_ENV !== 'development') {
+  if (false) {
+    throw new Error(`NODE_ENV (${process.env.NODE_ENV}) does not match value for compiled assets: development`);
+  } else {
+    console.warn('Overriding NODE_ENV: ' + process.env.NODE_ENV + ' to development in order to match value for compiled assets');
+    process.env.NODE_ENV = 'development';
+  }
+} else {
+  process.env.NODE_ENV = 'development';
+}
+  
+exports.id = "main";
+exports.modules = {
 
 /***/ "./src/components/App.js":
 /*!*******************************!*\
@@ -9,7 +22,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js";
 
@@ -52,30 +65,29 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       type,
       checked
     } = event.target;
-    type === 'checkbox' ? this.setState(prevState => {
-      return {
-        dietaryRestrictions: { ...prevState.dietaryRestrictions,
-          [name]: checked
-        }
-      };
+    type === 'checkbox' ? this.setState({
+      [name]: checked
     }) : this.setState({
       [name]: value
     });
   }
 
   render() {
+    let restrictions = [];
+    if (this.state.isVegetarian) restrictions.push('vegetarian');
+    if (this.state.isLactoseIntolerant) restrictions.push('lactose intolerant');
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51,
+        lineNumber: 45,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 46,
         columnNumber: 17
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -86,14 +98,14 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53,
+        lineNumber: 47,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59,
+        lineNumber: 53,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -104,14 +116,14 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60,
+        lineNumber: 54,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 60,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -122,21 +134,21 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67,
+        lineNumber: 61,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73,
+        lineNumber: 67,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
+        lineNumber: 70,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -148,21 +160,21 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77,
+        lineNumber: 71,
         columnNumber: 25
       }
     }), "Male"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 79,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 80,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -174,14 +186,14 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87,
+        lineNumber: 81,
         columnNumber: 25
       }
     }), "Female"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95,
+        lineNumber: 89,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
@@ -191,7 +203,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 92,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -199,7 +211,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103,
+        lineNumber: 97,
         columnNumber: 25
       }
     }, "-- Please Choose a destination --"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -207,7 +219,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104,
+        lineNumber: 98,
         columnNumber: 25
       }
     }, "Hawaii"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -215,7 +227,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105,
+        lineNumber: 99,
         columnNumber: 25
       }
     }, "Los Mochis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -223,21 +235,21 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106,
+        lineNumber: 100,
         columnNumber: 25
       }
     }, "Monterrey")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 108,
+        lineNumber: 102,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 111,
+        lineNumber: 105,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -248,320 +260,105 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112,
+        lineNumber: 106,
         columnNumber: 25
       }
     }), "Vegetarian"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119,
+        lineNumber: 113,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120,
+        lineNumber: 114,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
       type: "checkbox",
       name: "isLactoseIntolerant",
-      checked: this.state.dietaryRestrictions.isLactoseIntolerant,
+      checked: this.state.isLactoseIntolerant,
       onChange: this.handleChange,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121,
+        lineNumber: 115,
         columnNumber: 25
       }
     }), "Lactose Intolerant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 128,
+        lineNumber: 122,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 129,
+        lineNumber: 123,
         columnNumber: 21
       }
     }, "Submit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 131,
+        lineNumber: 125,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 132,
+        lineNumber: 126,
         columnNumber: 17
       }
     }, "Entered information:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133,
+        lineNumber: 127,
         columnNumber: 17
       }
     }, "Your name: ", this.state.firstName, " ", this.state.lastName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134,
+        lineNumber: 128,
         columnNumber: 17
       }
     }, "Your age: ", this.state.age), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 135,
+        lineNumber: 129,
         columnNumber: 17
       }
     }, "Your gender: ", this.state.gender), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136,
+        lineNumber: 130,
         columnNumber: 17
       }
     }, "Your destination: ", this.state.location), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137,
+        lineNumber: 131,
         columnNumber: 17
       }
-    }, "Your dietary restrictions: "), this.state.dietaryRestrictions.isVegetarian && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 139,
-        columnNumber: 65
-      }
-    }, "Vegetarian"), this.state.dietaryRestrictions.isLactoseIntolerant && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 140,
-        columnNumber: 72
-      }
-    }, "Lactose Intolerant"));
+    }, "Your dietary restrictions:", restrictions));
   }
 
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
-/***/ }),
-
-/***/ "./src/components/root.js":
-/*!********************************!*\
-  !*** ./src/components/root.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App */ "./src/components/App.js");
-var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js";
-// import React, {useState, useEffect} from 'react';
-// import {Helmet} from 'fusion-plugin-react-helmet-async';
-// import fetch from 'isomorphic-fetch';
-// const Root = () => {
-//   const [todos, setTodos] = useState([]);
-//   const [inputText, setInputText] = useState('');
-//   useEffect(() => {
-//     fetch('/api/todos')
-//       .then(async res => await res.json())
-//       .then(res => setTodos(res));
-//   }, []);
-//   const handleOnKeydown = (e) => {
-//     if (e.key === 'Enter') {
-//       setInputText('');
-//       setTodos([
-//         ...todos,
-//         inputText
-//       ]);
-//       fetch('/api/todos', {
-//         method: 'POST',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify({value: inputText}),
-//       });
-//     }
-//   };
-//   const handleOnChange = (e) => {
-//     setInputText(e.currentTarget.value);
-//   };
-//   return (
-//     <React.Fragment>
-//         <Helmet>
-//       <style>
-//       {`
-//         body {
-//           background-color: #f5f5f5;
-//           font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//         }
-//         h1 {
-//           color: rgba(175, 47, 47, 0.15);
-//           font-size: 100px;
-//           font-weight: 100;
-//           text-align: center;
-//         }
-//         .container {
-//           background: #ffffff;
-//           border: 1px solid #ededed;
-//           margin: 0 auto;
-//           width: 550px;
-//         }
-//         input {
-//           border: none;
-//           font-size: 24px;
-//           font-weight: 300;
-//           padding: 15px;
-//           width: 520px;
-//         }
-//         input::placeholder {
-//           color: #e6e6e6;
-//           font-style: italic;
-//           font-weight: 100;
-//         }
-//         .todo {
-//           border-top: 1px solid #ededed;
-//           padding: 15px;
-//         }
-//         .todo-text {
-//           font-weight: 300;
-//         }
-//       `}
-//       </style>
-//     </Helmet>
-//       <h1>todos</h1>
-//       <div className="container">
-//         <input
-//           onChange={handleOnChange}
-//           onKeyDown={handleOnKeydown}
-//           placeholder="What needs to be done?"
-//           value={inputText}
-//           type="text"
-//         />
-//         {todos.map(todo => (
-//           <div className="todo">
-//             <div className="todo-text">{todo}</div>
-//           </div>
-//         ))}
-//       </div>
-//     </React.Fragment>
-//   );
-// }
-
-
-
-function Root() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103,
-      columnNumber: 5
-    }
-  });
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Root, {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 107,
-    columnNumber: 16
-  }
-}));
-
-/***/ }),
-
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return start; });
-/* harmony import */ var fusion_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fusion-react */ "./node_modules/fusion-react/dist-browser-esm/index.js");
-/* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/root */ "./src/components/root.js");
-/* harmony import */ var _plugins_todos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plugins/todos */ "./src/plugins/todos.js");
-/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! fusion-plugin-react-helmet-async */ "./node_modules/fusion-plugin-react-helmet-async/dist-browser-esm/index.js");
-
-
- // styling
-
-
-async function start() {
-  const app = new fusion_react__WEBPACK_IMPORTED_MODULE_0__["default"](_components_root__WEBPACK_IMPORTED_MODULE_1__["default"]);
-
-  if (false) {}
-
-  app.register(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__["default"]);
-  return app;
-}
-
-/***/ }),
-
-/***/ "./src/plugins/todos.js":
-/*!******************************!*\
-  !*** ./src/plugins/todos.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const todos = ['Buy milk', 'Walk dog'];
-/* harmony default export */ __webpack_exports__["default"] = (async (ctx, next) => {
-  if (ctx.path === '/api/todos') {
-    if (ctx.method === 'GET') {
-      ctx.response.body = todos;
-    } else if (ctx.method === 'POST') {
-      const {
-        value
-      } = ctx.request.body;
-      todos.push(value);
-      ctx.response.status = 201;
-    }
-  }
-
-  await next();
-});
-
-/***/ }),
-
-/***/ 0:
-/*!**********************************************************************************************************************************************************************!*\
-  !*** multi ./node_modules/fusion-cli/entries/client-public-path.js (webpack)-hot-middleware/client.js?name=client ./node_modules/fusion-cli/entries/client-entry.js ***!
-  \**********************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\fusion-cli\entries\client-public-path.js */"./node_modules/fusion-cli/entries/client-public-path.js");
-__webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\webpack-hot-middleware\client.js?name=client */"./node_modules/webpack-hot-middleware/client.js?name=client");
-module.exports = __webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\fusion-cli\entries\client-entry.js */"./node_modules/fusion-cli/entries/client-entry.js");
-
-
 /***/ })
 
-},[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=client-main.js.map
+};
+//# sourceMappingURL=main.415256120df5120915b0.hot-update.js.map

@@ -35,7 +35,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "bc740ab1bfc99c85b4de";
+/******/ 	var hotCurrentHash = "2dc9096311d7ddfba3e7";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1796,11 +1796,13 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     this.state = {
       firstName: "",
       lastName: "",
-      Age: "",
+      age: "",
       gender: "",
       location: "",
-      isVegetarian: false,
-      isLactoseIntolerant: false
+      dietaryRestrictions: {
+        isVegetarian: false,
+        isLactoseIntolerant: false
+      }
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -1812,29 +1814,30 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       type,
       checked
     } = event.target;
-    type === 'checkbox' ? this.setState({
-      [name]: checked
+    type === 'checkbox' ? this.setState(prevState => {
+      return {
+        dietaryRestrictions: { ...prevState.dietaryRestrictions,
+          [name]: checked
+        }
+      };
     }) : this.setState({
       [name]: value
     });
   }
 
   render() {
-    let restrictions = [];
-    if (this.state.isVegetarian) restrictions.push('vegetarian');
-    if (this.state.isLactoseIntolerant) restrictions.push('lactose intolerant');
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 51,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 52,
         columnNumber: 17
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -1845,14 +1848,14 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45,
+        lineNumber: 53,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51,
+        lineNumber: 59,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -1863,35 +1866,42 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 60,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58,
+        lineNumber: 66,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-      name: "Age",
-      value: this.state.Age,
+      name: "age",
+      value: this.state.age,
       placeholder: "Age",
       onChange: this.handleChange,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59,
+        lineNumber: 67,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65,
+        lineNumber: 73,
         columnNumber: 21
       }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
       type: "radio",
       name: "gender",
       value: "male",
@@ -1900,10 +1910,24 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68,
+        lineNumber: 77,
+        columnNumber: 25
+      }
+    }), "Male"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85,
         columnNumber: 21
       }
-    }), "Male", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
       type: "radio",
       name: "gender",
       value: "female",
@@ -1912,14 +1936,14 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75,
-        columnNumber: 21
+        lineNumber: 87,
+        columnNumber: 25
       }
-    }), "Female", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    }), "Female"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82,
+        lineNumber: 95,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
@@ -1929,15 +1953,23 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 98,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+      value: "",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 103,
+        columnNumber: 25
+      }
+    }, "-- Please Choose a destination --"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
       value: "Hawaii",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90,
+        lineNumber: 104,
         columnNumber: 25
       }
     }, "Hawaii"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -1945,7 +1977,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91,
+        lineNumber: 105,
         columnNumber: 25
       }
     }, "Los Mochis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -1953,109 +1985,137 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92,
+        lineNumber: 106,
         columnNumber: 25
       }
     }, "Monterrey")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94,
+        lineNumber: 108,
         columnNumber: 21
       }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-      type: "checkbox",
-      name: "isVegetarian",
-      checked: this.state.isVegetarian,
-      onChange: this.handleChange,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 97,
-        columnNumber: 21
-      }
-    }), "Vegetarian", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 103,
-        columnNumber: 21
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-      type: "checkbox",
-      name: "isLactoseIntolerant",
-      checked: this.state.isLactoseIntolerant,
-      onChange: this.handleChange,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 104,
-        columnNumber: 21
-      }
-    }), "Lactose Intolerant", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 110,
-        columnNumber: 21
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 111,
         columnNumber: 21
       }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "checkbox",
+      name: "isVegetarian",
+      checked: this.state.dietaryRestrictions.isVegetarian,
+      onChange: this.handleChange,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 112,
+        columnNumber: 25
+      }
+    }), "Vegetarian"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 119,
+        columnNumber: 21
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 120,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "checkbox",
+      name: "isLactoseIntolerant",
+      checked: this.state.dietaryRestrictions.isLactoseIntolerant,
+      onChange: this.handleChange,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121,
+        columnNumber: 25
+      }
+    }), "Lactose Intolerant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 128,
+        columnNumber: 21
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 129,
+        columnNumber: 21
+      }
     }, "Submit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 113,
+        lineNumber: 131,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114,
+        lineNumber: 132,
         columnNumber: 17
       }
     }, "Entered information:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 115,
+        lineNumber: 133,
         columnNumber: 17
       }
     }, "Your name: ", this.state.firstName, " ", this.state.lastName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 116,
+        lineNumber: 134,
         columnNumber: 17
       }
-    }, "Your age: ", this.state.Age), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    }, "Your age: ", this.state.age), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117,
+        lineNumber: 135,
         columnNumber: 17
       }
     }, "Your gender: ", this.state.gender), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118,
+        lineNumber: 136,
         columnNumber: 17
       }
     }, "Your destination: ", this.state.location), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119,
+        lineNumber: 137,
         columnNumber: 17
       }
-    }, "Your dietary restrictions:", restrictions.split(',')));
+    }, "Your dietary restrictions: "), this.state.dietaryRestrictions.isVegetarian && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 139,
+        columnNumber: 65
+      }
+    }, "Vegetarian"), this.state.dietaryRestrictions.isLactoseIntolerant && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 140,
+        columnNumber: 72
+      }
+    }, "Lactose Intolerant"));
   }
 
 }
