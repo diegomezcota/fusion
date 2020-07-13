@@ -2,27 +2,27 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.2",
-  "hash": "b0a7d0db1424d5ba5b34",
+  "hash": "9fec8472abe4ab4e4585",
   "children": [
     {
       "errors": [],
       "warnings": [],
-      "hash": "b0a7d0db1424d5ba5b34",
-      "time": 277,
-      "builtAt": 1594601517285,
+      "hash": "9fec8472abe4ab4e4585",
+      "time": 332,
+      "builtAt": 1594606860786,
       "publicPath": "",
       "outputPath": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\.fusion\\dist\\development\\server",
       "assetsByChunkName": {
         "main": [
           "server-main.js",
-          "main.b9d6e057134379384610.hot-update.js",
+          "main.72bf95b964750ccac876.hot-update.js",
           "server-main.js.map",
-          "main.b9d6e057134379384610.hot-update.js.map"
+          "main.72bf95b964750ccac876.hot-update.js.map"
         ]
       },
       "assets": [
         {
-          "name": "b9d6e057134379384610.hot-update.json",
+          "name": "72bf95b964750ccac876.hot-update.json",
           "size": 46,
           "chunks": [],
           "chunkNames": [],
@@ -33,8 +33,8 @@
           "emitted": true
         },
         {
-          "name": "main.b9d6e057134379384610.hot-update.js",
-          "size": 2038,
+          "name": "main.72bf95b964750ccac876.hot-update.js",
+          "size": 4643,
           "chunks": [
             "main"
           ],
@@ -48,8 +48,8 @@
           "emitted": true
         },
         {
-          "name": "main.b9d6e057134379384610.hot-update.js.map",
-          "size": 1134,
+          "name": "main.72bf95b964750ccac876.hot-update.js.map",
+          "size": 3125,
           "chunks": [
             "main"
           ],
@@ -63,7 +63,7 @@
         },
         {
           "name": "server-main.js",
-          "size": 82832,
+          "size": 84682,
           "chunks": [
             "main"
           ],
@@ -75,7 +75,7 @@
         },
         {
           "name": "server-main.js.map",
-          "size": 66054,
+          "size": 67435,
           "chunks": [
             "main"
           ],
@@ -96,9 +96,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.b9d6e057134379384610.hot-update.js",
+            "main.72bf95b964750ccac876.hot-update.js",
             "server-main.js.map",
-            "main.b9d6e057134379384610.hot-update.js.map"
+            "main.72bf95b964750ccac876.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -111,9 +111,9 @@
           ],
           "assets": [
             "server-main.js",
-            "main.b9d6e057134379384610.hot-update.js",
+            "main.72bf95b964750ccac876.hot-update.js",
             "server-main.js.map",
-            "main.b9d6e057134379384610.hot-update.js.map"
+            "main.72bf95b964750ccac876.hot-update.js.map"
           ],
           "children": {},
           "childAssets": {}
@@ -125,17 +125,17 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 27053,
+          "size": 28719,
           "names": [
             "main"
           ],
           "files": [
             "server-main.js",
-            "main.b9d6e057134379384610.hot-update.js",
+            "main.72bf95b964750ccac876.hot-update.js",
             "server-main.js.map",
-            "main.b9d6e057134379384610.hot-update.js.map"
+            "main.72bf95b964750ccac876.hot-update.js.map"
           ],
-          "hash": "8a7c6f185de1c73c8c14",
+          "hash": "f0ec646ce45816e0e12b",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -1318,7 +1318,7 @@
               "name": "./src/components/App.js",
               "index": 31,
               "index2": 29,
-              "size": 977,
+              "size": 760,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1363,7 +1363,7 @@
                   "moduleName": "./src/components/root.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./App",
-                  "loc": "8:0-24"
+                  "loc": "3:0-24"
                 },
                 {
                   "moduleId": "./src/components/root.js",
@@ -1372,7 +1372,7 @@
                   "moduleName": "./src/components/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "./App",
-                  "loc": "12:44-47"
+                  "loc": "6:42-45"
                 }
               ],
               "providedExports": [
@@ -1380,7 +1380,7 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\App.js\";\nimport React from 'react';\n/**\r\n * Create 2 new components - Header and MemeGenerator\r\n * Header will only display things\r\n * MemeGenerator will be calling to an API and holding on to data\r\n * Each should be in their own file of the same name\r\n */\n\nimport Header from './Header';\nimport MemeGenerator from './MemeGenerator';\nexport default function App() {\n  return /*#__PURE__*/React.createElement(\"div\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14,\n      columnNumber: 9\n    }\n  }, /*#__PURE__*/React.createElement(Header, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15,\n      columnNumber: 13\n    }\n  }), /*#__PURE__*/React.createElement(MemeGenerator, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16,\n      columnNumber: 13\n    }\n  }));\n}"
+              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\App.js\";\nimport React from 'react';\nimport Header from './Header';\nimport MemeGenerator from './MemeGenerator';\n\nfunction App() {\n  return /*#__PURE__*/React.createElement(\"div\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8,\n      columnNumber: 9\n    }\n  }, /*#__PURE__*/React.createElement(Header, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9,\n      columnNumber: 13\n    }\n  }), /*#__PURE__*/React.createElement(MemeGenerator, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10,\n      columnNumber: 13\n    }\n  }));\n}\n\nexport default App;"
             },
             {
               "id": "./src/components/Header.js",
@@ -1388,7 +1388,7 @@
               "name": "./src/components/Header.js",
               "index": 32,
               "index2": 27,
-              "size": 799,
+              "size": 599,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1438,7 +1438,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./Header",
-                  "loc": "10:0-30"
+                  "loc": "3:0-30"
                 },
                 {
                   "moduleId": "./src/components/App.js",
@@ -1447,7 +1447,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony import specifier",
                   "userRequest": "./Header",
-                  "loc": "20:38-44"
+                  "loc": "14:38-44"
                 }
               ],
               "providedExports": [
@@ -1455,7 +1455,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\Header.js\";\nimport React from 'react';\n\nfunction Header() {\n  return /*#__PURE__*/React.createElement(\"header\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5,\n      columnNumber: 9\n    }\n  }, /*#__PURE__*/React.createElement(\"img\", {\n    src: \"http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png\",\n    alt: \"Problem?\",\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 13\n    }\n  }), /*#__PURE__*/React.createElement(\"p\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10,\n      columnNumber: 13\n    }\n  }, \"Meme Generator\"));\n}\n\nexport default Header;"
+              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\Header.js\";\nimport React from 'react';\n\nfunction Header() {\n  return /*#__PURE__*/React.createElement(\"header\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5,\n      columnNumber: 9\n    }\n  }, /*#__PURE__*/React.createElement(\"img\", {\n    src: \"http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png\",\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 13\n    }\n  }));\n}\n\nexport default Header;"
             },
             {
               "id": "./src/components/MemeGenerator.js",
@@ -1463,7 +1463,7 @@
               "name": "./src/components/MemeGenerator.js",
               "index": 33,
               "index2": 28,
-              "size": 786,
+              "size": 3079,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -1513,7 +1513,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "./MemeGenerator",
-                  "loc": "11:0-44"
+                  "loc": "4:0-44"
                 },
                 {
                   "moduleId": "./src/components/App.js",
@@ -1522,7 +1522,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony import specifier",
                   "userRequest": "./MemeGenerator",
-                  "loc": "27:39-52"
+                  "loc": "21:39-52"
                 }
               ],
               "providedExports": [
@@ -1530,7 +1530,7 @@
               ],
               "optimizationBailout": [],
               "depth": 5,
-              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\MemeGenerator.js\";\nimport React from 'react';\n\nclass MemeGenerator extends React.Component {\n  constructor() {\n    super();\n    this.state = {\n      topText: \"\",\n      bottomText: \"\",\n      randomImage: \"http://i.imgflip.com/1bij.jpg\",\n      allMemeImgs: []\n    };\n  }\n\n  componentDidMount() {\n    fetch(\"https://api.imgflip.com/get_memes\").then(data => data.json()).then(this.setState({\n      allMemeImgs: data\n    }));\n  }\n\n  render() {\n    return /*#__PURE__*/React.createElement(\"h2\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24,\n        columnNumber: 13\n      }\n    }, \"Generated Memes\");\n  }\n\n}\n\nexport default MemeGenerator;"
+              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\MemeGenerator.js\";\nimport React from 'react';\n\nclass MemeGenerator extends React.Component {\n  constructor() {\n    super();\n    this.state = {\n      topText: \"\",\n      bottomText: \"\",\n      randomImg: \"http://i.imgflip.com/1bij.jpg\",\n      allMemeImgs: []\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.handleSubmit = this.handleSubmit.bind(this);\n  }\n\n  componentDidMount() {\n    fetch(\"https://api.imgflip.com/get_memes\").then(response => response.json()).then(response => {\n      const {\n        memes\n      } = response.data;\n      this.setState({\n        allMemeImgs: memes\n      });\n    });\n  }\n\n  handleChange() {\n    const {\n      name,\n      value\n    } = event.target;\n    this.setState({\n      [name]: value\n    });\n  }\n\n  handleSubmit(event) {\n    event.preventDefault();\n    const index = Math.floor(Math.random() * 100);\n    const newUrl = this.state.allMemeImgs[index].url;\n    this.setState({\n      randomImg: newUrl\n    });\n  }\n\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45,\n        columnNumber: 13\n      }\n    }, /*#__PURE__*/React.createElement(\"form\", {\n      onSubmit: this.handleSubmit,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46,\n        columnNumber: 17\n      }\n    }, /*#__PURE__*/React.createElement(\"input\", {\n      type: \"text\",\n      name: \"topText\",\n      value: this.state.topText,\n      onChange: this.handleChange,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47,\n        columnNumber: 21\n      }\n    }), /*#__PURE__*/React.createElement(\"input\", {\n      type: \"text\",\n      name: \"bottomText\",\n      value: this.state.bottomText,\n      onChange: this.handleChange,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 53,\n        columnNumber: 21\n      }\n    }), /*#__PURE__*/React.createElement(\"button\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 59,\n        columnNumber: 21\n      }\n    }, \"Gen\")), /*#__PURE__*/React.createElement(\"div\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 61,\n        columnNumber: 17\n      }\n    }, /*#__PURE__*/React.createElement(\"img\", {\n      src: this.state.randomImg,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 62,\n        columnNumber: 21\n      }\n    }), /*#__PURE__*/React.createElement(\"h2\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 63,\n        columnNumber: 21\n      }\n    }, this.state.topText), /*#__PURE__*/React.createElement(\"h2\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 64,\n        columnNumber: 21\n      }\n    }, this.state.bottomText)));\n  }\n\n}\n\nexport default MemeGenerator;"
             },
             {
               "id": "./src/components/root.js",
@@ -1538,7 +1538,7 @@
               "name": "./src/components/root.js",
               "index": 29,
               "index2": 30,
-              "size": 728,
+              "size": 518,
               "cacheable": true,
               "built": false,
               "optional": false,
@@ -1595,7 +1595,7 @@
               ],
               "optimizationBailout": [],
               "depth": 3,
-              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\root.js\";\n\n/**\r\n * Create the boilerplate to get React to render something on the screen\r\n * Render an <App /> component, which you'll need to create separately\r\n */\nimport React from 'react';\nimport App from './App';\n\nclass Root extends React.Component {\n  render() {\n    return /*#__PURE__*/React.createElement(App, {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 11,\n        columnNumber: 7\n      }\n    });\n  }\n\n}\n\nexport default /*#__PURE__*/React.createElement(Root, {\n  __self: this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 16,\n    columnNumber: 16\n  }\n});"
+              "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\root.js\";\nimport React from 'react';\nimport App from './App';\n\nfunction Root() {\n  return /*#__PURE__*/React.createElement(App, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 5\n    }\n  });\n}\n\nexport default /*#__PURE__*/React.createElement(Root, {\n  __self: this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 10,\n    columnNumber: 16\n  }\n});"
             },
             {
               "id": "./src/main.js",
@@ -2585,7 +2585,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "13:22-27"
+                  "loc": "7:22-27"
                 },
                 {
                   "moduleId": "./src/components/App.js",
@@ -2594,7 +2594,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "20:18-23"
+                  "loc": "14:18-23"
                 },
                 {
                   "moduleId": "./src/components/App.js",
@@ -2603,7 +2603,7 @@
                   "moduleName": "./src/components/App.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "27:19-24"
+                  "loc": "21:19-24"
                 },
                 {
                   "moduleId": "./src/components/Header.js",
@@ -2633,15 +2633,6 @@
                   "loc": "12:18-23"
                 },
                 {
-                  "moduleId": "./src/components/Header.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\Header.js",
-                  "module": "./src/components/Header.js",
-                  "moduleName": "./src/components/Header.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "21:19-24"
-                },
-                {
                   "moduleId": "./src/components/MemeGenerator.js",
                   "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
                   "module": "./src/components/MemeGenerator.js",
@@ -2666,7 +2657,79 @@
                   "moduleName": "./src/components/MemeGenerator.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "22:24-29"
+                  "loc": "48:24-29"
+                },
+                {
+                  "moduleId": "./src/components/MemeGenerator.js",
+                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+                  "module": "./src/components/MemeGenerator.js",
+                  "moduleName": "./src/components/MemeGenerator.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "55:20-25"
+                },
+                {
+                  "moduleId": "./src/components/MemeGenerator.js",
+                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+                  "module": "./src/components/MemeGenerator.js",
+                  "moduleName": "./src/components/MemeGenerator.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "63:20-25"
+                },
+                {
+                  "moduleId": "./src/components/MemeGenerator.js",
+                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+                  "module": "./src/components/MemeGenerator.js",
+                  "moduleName": "./src/components/MemeGenerator.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "74:21-26"
+                },
+                {
+                  "moduleId": "./src/components/MemeGenerator.js",
+                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+                  "module": "./src/components/MemeGenerator.js",
+                  "moduleName": "./src/components/MemeGenerator.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "85:21-26"
+                },
+                {
+                  "moduleId": "./src/components/MemeGenerator.js",
+                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+                  "module": "./src/components/MemeGenerator.js",
+                  "moduleName": "./src/components/MemeGenerator.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "92:29-34"
+                },
+                {
+                  "moduleId": "./src/components/MemeGenerator.js",
+                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+                  "module": "./src/components/MemeGenerator.js",
+                  "moduleName": "./src/components/MemeGenerator.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "99:20-25"
+                },
+                {
+                  "moduleId": "./src/components/MemeGenerator.js",
+                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+                  "module": "./src/components/MemeGenerator.js",
+                  "moduleName": "./src/components/MemeGenerator.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "107:21-26"
+                },
+                {
+                  "moduleId": "./src/components/MemeGenerator.js",
+                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+                  "module": "./src/components/MemeGenerator.js",
+                  "moduleName": "./src/components/MemeGenerator.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "react",
+                  "loc": "114:41-46"
                 },
                 {
                   "moduleId": "./src/components/root.js",
@@ -2675,7 +2738,7 @@
                   "moduleName": "./src/components/root.js",
                   "type": "harmony side effect evaluation",
                   "userRequest": "react",
-                  "loc": "7:0-26"
+                  "loc": "2:0-26"
                 },
                 {
                   "moduleId": "./src/components/root.js",
@@ -2684,7 +2747,7 @@
                   "moduleName": "./src/components/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "10:19-24"
+                  "loc": "6:22-27"
                 },
                 {
                   "moduleId": "./src/components/root.js",
@@ -2693,16 +2756,7 @@
                   "moduleName": "./src/components/root.js",
                   "type": "harmony import specifier",
                   "userRequest": "react",
-                  "loc": "12:24-29"
-                },
-                {
-                  "moduleId": "./src/components/root.js",
-                  "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js",
-                  "module": "./src/components/root.js",
-                  "moduleName": "./src/components/root.js",
-                  "type": "harmony import specifier",
-                  "userRequest": "react",
-                  "loc": "24:28-33"
+                  "loc": "16:28-33"
                 }
               ],
               "providedExports": null,
@@ -4013,7 +4067,7 @@
           "name": "./src/components/App.js",
           "index": 31,
           "index2": 29,
-          "size": 977,
+          "size": 760,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -4058,7 +4112,7 @@
               "moduleName": "./src/components/root.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./App",
-              "loc": "8:0-24"
+              "loc": "3:0-24"
             },
             {
               "moduleId": "./src/components/root.js",
@@ -4067,7 +4121,7 @@
               "moduleName": "./src/components/root.js",
               "type": "harmony import specifier",
               "userRequest": "./App",
-              "loc": "12:44-47"
+              "loc": "6:42-45"
             }
           ],
           "providedExports": [
@@ -4075,7 +4129,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\App.js\";\nimport React from 'react';\n/**\r\n * Create 2 new components - Header and MemeGenerator\r\n * Header will only display things\r\n * MemeGenerator will be calling to an API and holding on to data\r\n * Each should be in their own file of the same name\r\n */\n\nimport Header from './Header';\nimport MemeGenerator from './MemeGenerator';\nexport default function App() {\n  return /*#__PURE__*/React.createElement(\"div\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14,\n      columnNumber: 9\n    }\n  }, /*#__PURE__*/React.createElement(Header, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15,\n      columnNumber: 13\n    }\n  }), /*#__PURE__*/React.createElement(MemeGenerator, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16,\n      columnNumber: 13\n    }\n  }));\n}"
+          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\App.js\";\nimport React from 'react';\nimport Header from './Header';\nimport MemeGenerator from './MemeGenerator';\n\nfunction App() {\n  return /*#__PURE__*/React.createElement(\"div\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8,\n      columnNumber: 9\n    }\n  }, /*#__PURE__*/React.createElement(Header, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9,\n      columnNumber: 13\n    }\n  }), /*#__PURE__*/React.createElement(MemeGenerator, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10,\n      columnNumber: 13\n    }\n  }));\n}\n\nexport default App;"
         },
         {
           "id": "./src/components/Header.js",
@@ -4083,7 +4137,7 @@
           "name": "./src/components/Header.js",
           "index": 32,
           "index2": 27,
-          "size": 799,
+          "size": 599,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -4133,7 +4187,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./Header",
-              "loc": "10:0-30"
+              "loc": "3:0-30"
             },
             {
               "moduleId": "./src/components/App.js",
@@ -4142,7 +4196,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony import specifier",
               "userRequest": "./Header",
-              "loc": "20:38-44"
+              "loc": "14:38-44"
             }
           ],
           "providedExports": [
@@ -4150,7 +4204,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\Header.js\";\nimport React from 'react';\n\nfunction Header() {\n  return /*#__PURE__*/React.createElement(\"header\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5,\n      columnNumber: 9\n    }\n  }, /*#__PURE__*/React.createElement(\"img\", {\n    src: \"http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png\",\n    alt: \"Problem?\",\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 13\n    }\n  }), /*#__PURE__*/React.createElement(\"p\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10,\n      columnNumber: 13\n    }\n  }, \"Meme Generator\"));\n}\n\nexport default Header;"
+          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\Header.js\";\nimport React from 'react';\n\nfunction Header() {\n  return /*#__PURE__*/React.createElement(\"header\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5,\n      columnNumber: 9\n    }\n  }, /*#__PURE__*/React.createElement(\"img\", {\n    src: \"http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png\",\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 13\n    }\n  }));\n}\n\nexport default Header;"
         },
         {
           "id": "./src/components/MemeGenerator.js",
@@ -4158,7 +4212,7 @@
           "name": "./src/components/MemeGenerator.js",
           "index": 33,
           "index2": 28,
-          "size": 786,
+          "size": 3079,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -4208,7 +4262,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./MemeGenerator",
-              "loc": "11:0-44"
+              "loc": "4:0-44"
             },
             {
               "moduleId": "./src/components/App.js",
@@ -4217,7 +4271,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony import specifier",
               "userRequest": "./MemeGenerator",
-              "loc": "27:39-52"
+              "loc": "21:39-52"
             }
           ],
           "providedExports": [
@@ -4225,7 +4279,7 @@
           ],
           "optimizationBailout": [],
           "depth": 5,
-          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\MemeGenerator.js\";\nimport React from 'react';\n\nclass MemeGenerator extends React.Component {\n  constructor() {\n    super();\n    this.state = {\n      topText: \"\",\n      bottomText: \"\",\n      randomImage: \"http://i.imgflip.com/1bij.jpg\",\n      allMemeImgs: []\n    };\n  }\n\n  componentDidMount() {\n    fetch(\"https://api.imgflip.com/get_memes\").then(data => data.json()).then(this.setState({\n      allMemeImgs: data\n    }));\n  }\n\n  render() {\n    return /*#__PURE__*/React.createElement(\"h2\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24,\n        columnNumber: 13\n      }\n    }, \"Generated Memes\");\n  }\n\n}\n\nexport default MemeGenerator;"
+          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\MemeGenerator.js\";\nimport React from 'react';\n\nclass MemeGenerator extends React.Component {\n  constructor() {\n    super();\n    this.state = {\n      topText: \"\",\n      bottomText: \"\",\n      randomImg: \"http://i.imgflip.com/1bij.jpg\",\n      allMemeImgs: []\n    };\n    this.handleChange = this.handleChange.bind(this);\n    this.handleSubmit = this.handleSubmit.bind(this);\n  }\n\n  componentDidMount() {\n    fetch(\"https://api.imgflip.com/get_memes\").then(response => response.json()).then(response => {\n      const {\n        memes\n      } = response.data;\n      this.setState({\n        allMemeImgs: memes\n      });\n    });\n  }\n\n  handleChange() {\n    const {\n      name,\n      value\n    } = event.target;\n    this.setState({\n      [name]: value\n    });\n  }\n\n  handleSubmit(event) {\n    event.preventDefault();\n    const index = Math.floor(Math.random() * 100);\n    const newUrl = this.state.allMemeImgs[index].url;\n    this.setState({\n      randomImg: newUrl\n    });\n  }\n\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 45,\n        columnNumber: 13\n      }\n    }, /*#__PURE__*/React.createElement(\"form\", {\n      onSubmit: this.handleSubmit,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 46,\n        columnNumber: 17\n      }\n    }, /*#__PURE__*/React.createElement(\"input\", {\n      type: \"text\",\n      name: \"topText\",\n      value: this.state.topText,\n      onChange: this.handleChange,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 47,\n        columnNumber: 21\n      }\n    }), /*#__PURE__*/React.createElement(\"input\", {\n      type: \"text\",\n      name: \"bottomText\",\n      value: this.state.bottomText,\n      onChange: this.handleChange,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 53,\n        columnNumber: 21\n      }\n    }), /*#__PURE__*/React.createElement(\"button\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 59,\n        columnNumber: 21\n      }\n    }, \"Gen\")), /*#__PURE__*/React.createElement(\"div\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 61,\n        columnNumber: 17\n      }\n    }, /*#__PURE__*/React.createElement(\"img\", {\n      src: this.state.randomImg,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 62,\n        columnNumber: 21\n      }\n    }), /*#__PURE__*/React.createElement(\"h2\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 63,\n        columnNumber: 21\n      }\n    }, this.state.topText), /*#__PURE__*/React.createElement(\"h2\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 64,\n        columnNumber: 21\n      }\n    }, this.state.bottomText)));\n  }\n\n}\n\nexport default MemeGenerator;"
         },
         {
           "id": "./src/components/root.js",
@@ -4233,7 +4287,7 @@
           "name": "./src/components/root.js",
           "index": 29,
           "index2": 30,
-          "size": 728,
+          "size": 518,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -4290,7 +4344,7 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\root.js\";\n\n/**\r\n * Create the boilerplate to get React to render something on the screen\r\n * Render an <App /> component, which you'll need to create separately\r\n */\nimport React from 'react';\nimport App from './App';\n\nclass Root extends React.Component {\n  render() {\n    return /*#__PURE__*/React.createElement(App, {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 11,\n        columnNumber: 7\n      }\n    });\n  }\n\n}\n\nexport default /*#__PURE__*/React.createElement(Root, {\n  __self: this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 16,\n    columnNumber: 16\n  }\n});"
+          "source": "var _jsxFileName = \"C:\\\\Users\\\\diego\\\\OneDrive\\\\Documentos\\\\fusionjs\\\\fusion-tutorial\\\\src\\\\components\\\\root.js\";\nimport React from 'react';\nimport App from './App';\n\nfunction Root() {\n  return /*#__PURE__*/React.createElement(App, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 5\n    }\n  });\n}\n\nexport default /*#__PURE__*/React.createElement(Root, {\n  __self: this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 10,\n    columnNumber: 16\n  }\n});"
         },
         {
           "id": "./src/main.js",
@@ -5280,7 +5334,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "13:22-27"
+              "loc": "7:22-27"
             },
             {
               "moduleId": "./src/components/App.js",
@@ -5289,7 +5343,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "20:18-23"
+              "loc": "14:18-23"
             },
             {
               "moduleId": "./src/components/App.js",
@@ -5298,7 +5352,7 @@
               "moduleName": "./src/components/App.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "27:19-24"
+              "loc": "21:19-24"
             },
             {
               "moduleId": "./src/components/Header.js",
@@ -5328,15 +5382,6 @@
               "loc": "12:18-23"
             },
             {
-              "moduleId": "./src/components/Header.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\Header.js",
-              "module": "./src/components/Header.js",
-              "moduleName": "./src/components/Header.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "21:19-24"
-            },
-            {
               "moduleId": "./src/components/MemeGenerator.js",
               "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
               "module": "./src/components/MemeGenerator.js",
@@ -5361,7 +5406,79 @@
               "moduleName": "./src/components/MemeGenerator.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "22:24-29"
+              "loc": "48:24-29"
+            },
+            {
+              "moduleId": "./src/components/MemeGenerator.js",
+              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+              "module": "./src/components/MemeGenerator.js",
+              "moduleName": "./src/components/MemeGenerator.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "55:20-25"
+            },
+            {
+              "moduleId": "./src/components/MemeGenerator.js",
+              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+              "module": "./src/components/MemeGenerator.js",
+              "moduleName": "./src/components/MemeGenerator.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "63:20-25"
+            },
+            {
+              "moduleId": "./src/components/MemeGenerator.js",
+              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+              "module": "./src/components/MemeGenerator.js",
+              "moduleName": "./src/components/MemeGenerator.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "74:21-26"
+            },
+            {
+              "moduleId": "./src/components/MemeGenerator.js",
+              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+              "module": "./src/components/MemeGenerator.js",
+              "moduleName": "./src/components/MemeGenerator.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "85:21-26"
+            },
+            {
+              "moduleId": "./src/components/MemeGenerator.js",
+              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+              "module": "./src/components/MemeGenerator.js",
+              "moduleName": "./src/components/MemeGenerator.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "92:29-34"
+            },
+            {
+              "moduleId": "./src/components/MemeGenerator.js",
+              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+              "module": "./src/components/MemeGenerator.js",
+              "moduleName": "./src/components/MemeGenerator.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "99:20-25"
+            },
+            {
+              "moduleId": "./src/components/MemeGenerator.js",
+              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+              "module": "./src/components/MemeGenerator.js",
+              "moduleName": "./src/components/MemeGenerator.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "107:21-26"
+            },
+            {
+              "moduleId": "./src/components/MemeGenerator.js",
+              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\MemeGenerator.js",
+              "module": "./src/components/MemeGenerator.js",
+              "moduleName": "./src/components/MemeGenerator.js",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "114:41-46"
             },
             {
               "moduleId": "./src/components/root.js",
@@ -5370,7 +5487,7 @@
               "moduleName": "./src/components/root.js",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "7:0-26"
+              "loc": "2:0-26"
             },
             {
               "moduleId": "./src/components/root.js",
@@ -5379,7 +5496,7 @@
               "moduleName": "./src/components/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "10:19-24"
+              "loc": "6:22-27"
             },
             {
               "moduleId": "./src/components/root.js",
@@ -5388,16 +5505,7 @@
               "moduleName": "./src/components/root.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:24-29"
-            },
-            {
-              "moduleId": "./src/components/root.js",
-              "moduleIdentifier": "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\fusion-cli\\build\\loaders\\babel-loader.js??ref--4-0!C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js",
-              "module": "./src/components/root.js",
-              "moduleName": "./src/components/root.js",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "24:28-33"
+              "loc": "16:28-33"
             }
           ],
           "providedExports": null,
