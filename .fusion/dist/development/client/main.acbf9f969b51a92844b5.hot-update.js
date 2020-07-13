@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+webpackHotUpdate("main",{
 
 /***/ "./src/components/App.js":
 /*!*******************************!*\
@@ -101,49 +101,7 @@ async function start() {
   return app;
 }
 
-/***/ }),
-
-/***/ "./src/plugins/todos.js":
-/*!******************************!*\
-  !*** ./src/plugins/todos.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const todos = ['Buy milk', 'Walk dog'];
-/* harmony default export */ __webpack_exports__["default"] = (async (ctx, next) => {
-  if (ctx.path === '/api/todos') {
-    if (ctx.method === 'GET') {
-      ctx.response.body = todos;
-    } else if (ctx.method === 'POST') {
-      const {
-        value
-      } = ctx.request.body;
-      todos.push(value);
-      ctx.response.status = 201;
-    }
-  }
-
-  await next();
-});
-
-/***/ }),
-
-/***/ 0:
-/*!**********************************************************************************************************************************************************************!*\
-  !*** multi ./node_modules/fusion-cli/entries/client-public-path.js (webpack)-hot-middleware/client.js?name=client ./node_modules/fusion-cli/entries/client-entry.js ***!
-  \**********************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\fusion-cli\entries\client-public-path.js */"./node_modules/fusion-cli/entries/client-public-path.js");
-__webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\webpack-hot-middleware\client.js?name=client */"./node_modules/webpack-hot-middleware/client.js?name=client");
-module.exports = __webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\fusion-cli\entries\client-entry.js */"./node_modules/fusion-cli/entries/client-entry.js");
-
-
 /***/ })
 
-},[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=client-main.js.map
+})
+//# sourceMappingURL=main.acbf9f969b51a92844b5.hot-update.js.map

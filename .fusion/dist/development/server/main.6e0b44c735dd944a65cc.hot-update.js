@@ -1,4 +1,17 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+if (process.env.NODE_ENV && process.env.NODE_ENV !== 'development') {
+  if (false) {
+    throw new Error(`NODE_ENV (${process.env.NODE_ENV}) does not match value for compiled assets: development`);
+  } else {
+    console.warn('Overriding NODE_ENV: ' + process.env.NODE_ENV + ' to development in order to match value for compiled assets');
+    process.env.NODE_ENV = 'development';
+  }
+} else {
+  process.env.NODE_ENV = 'development';
+}
+  
+exports.id = "main";
+exports.modules = {
 
 /***/ "./src/components/App.js":
 /*!*******************************!*\
@@ -10,7 +23,7 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\App.js";
 
@@ -36,7 +49,7 @@ function App() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App */ "./src/components/App.js");
 var _jsxFileName = "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\src\\components\\root.js";
@@ -83,67 +96,41 @@ class Root extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return start; });
-/* harmony import */ var fusion_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fusion-react */ "./node_modules/fusion-react/dist-browser-esm/index.js");
+/* harmony import */ var fusion_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fusion-react */ "fusion-react");
+/* harmony import */ var fusion_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fusion_react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/root */ "./src/components/root.js");
 /* harmony import */ var _plugins_todos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plugins/todos */ "./src/plugins/todos.js");
-/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! fusion-plugin-react-helmet-async */ "./node_modules/fusion-plugin-react-helmet-async/dist-browser-esm/index.js");
+/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! fusion-plugin-react-helmet-async */ "fusion-plugin-react-helmet-async");
+/* harmony import */ var fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__);
 
 
  // styling
 
 
 async function start() {
-  const app = new fusion_react__WEBPACK_IMPORTED_MODULE_0__["default"](_components_root__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  const app = new fusion_react__WEBPACK_IMPORTED_MODULE_0___default.a(_components_root__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
-  if (false) {}
+  if (true) {
+    app.middleware(__webpack_require__(/*! koa-bodyparser */ "koa-bodyparser")());
+    app.middleware(_plugins_todos__WEBPACK_IMPORTED_MODULE_2__["default"]);
+  }
 
-  app.register(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  app.register(fusion_plugin_react_helmet_async__WEBPACK_IMPORTED_MODULE_3___default.a);
   return app;
 }
 
 /***/ }),
 
-/***/ "./src/plugins/todos.js":
-/*!******************************!*\
-  !*** ./src/plugins/todos.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const todos = ['Buy milk', 'Walk dog'];
-/* harmony default export */ __webpack_exports__["default"] = (async (ctx, next) => {
-  if (ctx.path === '/api/todos') {
-    if (ctx.method === 'GET') {
-      ctx.response.body = todos;
-    } else if (ctx.method === 'POST') {
-      const {
-        value
-      } = ctx.request.body;
-      todos.push(value);
-      ctx.response.status = 201;
-    }
-  }
-
-  await next();
-});
-
-/***/ }),
-
-/***/ 0:
-/*!**********************************************************************************************************************************************************************!*\
-  !*** multi ./node_modules/fusion-cli/entries/client-public-path.js (webpack)-hot-middleware/client.js?name=client ./node_modules/fusion-cli/entries/client-entry.js ***!
-  \**********************************************************************************************************************************************************************/
+/***/ "react":
+/*!*******************************************************************************************************************!*\
+  !*** external "C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\react\\index.js" ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-__webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\fusion-cli\entries\client-public-path.js */"./node_modules/fusion-cli/entries/client-public-path.js");
-__webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\webpack-hot-middleware\client.js?name=client */"./node_modules/webpack-hot-middleware/client.js?name=client");
-module.exports = __webpack_require__(/*! C:\Users\diego\OneDrive\Documentos\fusionjs\fusion-tutorial\node_modules\fusion-cli\entries\client-entry.js */"./node_modules/fusion-cli/entries/client-entry.js");
-
+module.exports = require("C:\\Users\\diego\\OneDrive\\Documentos\\fusionjs\\fusion-tutorial\\node_modules\\react\\index.js");
 
 /***/ })
 
-},[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=client-main.js.map
+};
+//# sourceMappingURL=main.6e0b44c735dd944a65cc.hot-update.js.map
