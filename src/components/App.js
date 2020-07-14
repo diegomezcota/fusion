@@ -1,37 +1,34 @@
-import React, {useState} from "react"
+// componentDidMount
+// componentDidUpdate
+// componentWillUnmount
 
-// Convert the class below to a functional component that uses the useState hook to initalize a count vartiable to 0 and display the count on the screen.
-// Don't worry about the part where the button changes the count quite yet, that's what you're here to learn about!
+// Side effects?
 
-function App(){
+
+import React, {useState, useEffect} from "react"
+import randomcolor from "randomcolor"
+
+function App() {
     const [count, setCount] = useState(0)
-
+    const [color, setColor] = useState("")
+    
     function increment() {
         setCount(prevCount => prevCount + 1)
     }
-
+    
     function decrement() {
         setCount(prevCount => prevCount - 1)
     }
+    
+    useEffect(() => {
+        setColor(randomcolor())
+    }, [])
 
-    function double(){
-        setCount(prevCount => prevCount * 2)
-    }
-
-    function halve(){
-        setCount(prevCount => Math.floor(prevCount / 2))
-    }
-
-    return ( 
+    return (
         <div>
-            <h1>{count}</h1>
-            <button onClick={increment}>Increment!</button>
-            <br/>
-            <button onClick={decrement}>Decrement!</button>
-            <br/>
-            <button onClick={double}>Double!</button>
-            <br/>
-            <button onClick={halve}>Halve!</button>
+            <h1 style={{color : color}}>{count}</h1>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
         </div>
     )
 }
